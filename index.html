@@ -13,42 +13,59 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- TOP BANNER -->
-    <p>Książkę kupisz tylko na tej stronie, nie ma jej w księgarniach!</p>
-
+    <!-- BANNER -->
+    <div class="wrapper banner">
+        <p>Książkę kupisz tylko na tej stronie, nie ma jej w księgarniach!</p>
+    </div>
+    
     <!-- HEADER -->
-    <header>
-        <img class="logo" src="./img/logo.png" alt="klaudia michnik home page" width="150" height="49">
+    <header class="wrapper header">
 
-        <nav>
-            <ul class="">
-                <li class="">
-                    <a href="#author" class="">Poznaj autorkę</a>
-                </li>
-                <li class="">
-                    <a href="#books" class="">Książki</a>
-                </li>
-                <li class="">
-                    <a href="#newsletter" class="">Newsletter</a>
-                </li>  
-            </ul>
-            <a href="" class="">Zamów książkę</a>
-        </nav>
+        <img class="header-logo" src="./img/logo.png" href="index.html" alt="klaudia michnik home page" width="150" height="49">
+
+        <div class="header-links topnav">
+            <nav>
+                <span id="nav-label" hidden>Navigation</span>
+                <button id="btnOpen" class="topnav__open" aria-expanded="false" aria-labelledby="nav-label">
+                    <img src="./img/hamburger.svg" alt="" width="40" height="24" />
+                </button>
+                <div class="topnav__menu" role="dialog" aria-labelledby="nav-label">
+                    <button class="topnav__close" id="btnClose" aria-label="Close">
+                        <img src="./img/close.svg" alt="" width="28" height="27" />
+                    </button>
+                    <ul class="topnav__links">
+                        <li class="topnav__item">
+                            <a href="author" class="topnav__link">O autorce</a>
+                        </li>
+                        <li class="topnav__item">
+                            <a href="#books" class="topnav__link">Książki</a>
+                        </li>
+                        <li class="topnav__item">
+                            <a href="#contact" class="topnav__link">Kontakt</a>
+                        </li>
+                        <li class="topnav__item">
+                            <a href="shop.html" class="button">Zamów książkę</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        
     </header>
 
     <main>
         <!-- HERO -->
-        <section class="hero">
+        <section class="wrapper hero">
             <picture>
                 <img src="./img/book.png" alt="book cover" width="363" height="531">
             </picture>
             <h1 class="">Przebudzeni <span>ZRESETOWANA</span></h1>
             <p class="">Mroczna, emocjonalna space opera o wolnej woli, buncie i niebezpiecznych pragnieniach w świecie, gdzie człowieczeństwo ma kod kreskowy.</p>
-            <a href="" class="" type="button">Zamów książkę</a>
+            <a href="" class="button">Zamów książkę</a>
         </section>
         
         <!-- AUTHOR -->
-        <section id="author" class="">
+        <section id="author" class="wrapper author">
             <picture>
                 <img src="./img/author.png" class="" alt="picture of author" width="704" height="1408">
             </picture>
@@ -61,7 +78,7 @@
         </section>
 
         <!-- BOOKS -->
-        <section id="books" class="">
+        <section id="books" class="wrapper books">
             <h2>Moje książki</h2>
             <picture>
                 <img src="./img/book.png" alt="book cover" width="363" height="531">
@@ -72,17 +89,17 @@
             A gdy jej druga jaźń zaczyna się budzić… nic nie będzie takie samo.
             Zanim wybierzesz, kim chcesz być – musisz stawić czoła temu, kim cię stworzono.
             </p>
-            <a href="" class="" type="button">Zamów książkę</a>
+            <a href="" class="button">Zamów książkę</a>
         </section>
 
         <!-- OPINION -->
-        <section id="opinion" class>
+        <section id="opinion" class="wrapper opinion">
             <h2>Opinie czytelników</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, debitis dicta amet iste inventore ipsam a eius praesentium suscipit ad.</p>
         </section>
 
         <!-- CONTACT -->
-        <section id="contact">
+        <section id="contact" class="wrapper contact">
             <h2>Masz pytania:</h2>
             <div>
                 <h3>Napisz do mnie</h3>
@@ -115,15 +132,18 @@
             </div>
         </section>
 
-        <p class="banner__text">KSIĄŻKĘ KUPISZ TYLKO NA TEJ STRONIE, NIE MA JEJ W KSIĘGARNIACH!</p>
+        <!-- BANNER -->
+        <div class="wrapper banner">
+            <p>Książkę kupisz tylko na tej stronie, nie ma jej w księgarniach!</p>
+        </div>
 
     </main>
 
-    <footer class="wrapper">
+    <footer id="footer" class="wrapper footer">
         <p>© 2024 Klaudia Michnik. Wszelkie prawa zastrzeżone.</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/gh/rick-liruixin/body-scroll-lock-upgrade@v1.1.0/lib/index.umd.js"></script>
-    <script src="/js/script.js" async></script>
+    <script src="./js/script.js" async></script>
 </body>
 </html>
