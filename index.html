@@ -21,7 +21,9 @@
     <!-- HEADER -->
     <header class="wrapper header">
 
-        <img class="header-logo" src="./img/logo.png" href="index.html" alt="klaudia michnik home page" width="150" height="49">
+        <a class="header-logo" href="index.html">
+            <img src="./img/logo.png" alt="klaudia michnik home page" width="150" height="49">
+        </a>
 
         <div class="header-links topnav">
             <nav>
@@ -114,42 +116,51 @@
         </section>
 
         <!-- OPINION -->
-        <section id="opinion" class="wrapper opinion">
-            <h2>Opinie czytelników</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, debitis dicta amet iste inventore ipsam a eius praesentium suscipit ad.</p>
-        </section>
 
         <!-- CONTACT -->
         <section id="contact" class="wrapper contact">
             <h2>Masz pytania:</h2>
-            <div>
-                <h3>Napisz do mnie</h3>
-                <a href="mailto:klaudiamichnik@o2.pl">klaudiamichnik@o2.pl</a>
+            <div class="contact-box">
+                <div class="contact-box__email">
+                    <h3>Napisz do mnie:</h3>
+                    <a href="mailto:klaudiamichnik@o2.pl">klaudiamichnik@o2.pl</a>
+                </div>
+                <div class="contact-box__social">
+                    <h3>Znajdziesz mnie na:</h3>
+                    <ul>
+                        <li>
+                            <a href="https://www.instagram.com/klaudiamichnik.autorka/">
+                                <img src="./img/instagram.svg" alt="instagram icon">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/KlaudiaMichnik.autorka">
+                                <img class="facebook" src="./img/facebook.svg" alt="facebook icon">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCXCduRkl2ssTlgv6wbq-SFA">
+                                <img src="./img/youtube.svg" alt="youtube icon">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.tiktok.com/@klaudiamichn">
+                                <img src="./img/tiktok.svg" alt="tiktok icon">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div>
-                <h3>Znajdziesz mnie na:</h3>
-                <ul>
-                <li>
-                    <a href="">
-                    <img src="./img/instagram.svg" alt="instagram icon">
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                    <img class="svg2" src="./img/facebook.svg" alt="facebook icon">
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                    <img src="./img/youtube.svg" alt="youtube icon">
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                    <img src="./img/tiktok.svg" alt="tiktok icon">
-                    </a>
-                </li>
-                </ul>
+        </section>
+
+        <section class="newsletter wrapper">
+            <div class="newsletter-box">
+                <p>Chcesz otrzymywać ciekawostki o książce? Zapisz się do <span class="newsletter-span">newslettera!</span></p>
+                <form class="newsletter-form" action="#" method="POST">
+                    <input type="text" name="first_name" placeholder="Twoje imię" required>
+                    <input type="email" name="email" placeholder="Twój email" required>
+                    <button type="submit">Zapisz się</button>
+                </form>
             </div>
         </section>
 
@@ -157,7 +168,6 @@
         <div class="wrapper banner">
             <p>Książkę kupisz tylko na tej stronie, nie ma jej w księgarniach!</p>
         </div>
-
     </main>
 
     <footer id="footer" class="wrapper footer">
